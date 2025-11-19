@@ -54,10 +54,10 @@ function resetAll(){
     
 
     if (result1 > result2 ){
-        scoreText.textContent = "Team A WON!"
+        scoreText.textContent = "Home Team WON!"
     }
     else if(result1 < result2){
-        scoreText.textContent = "Team B WON!"
+        scoreText.textContent = "Away Team WON!"
 
     }
     else{
