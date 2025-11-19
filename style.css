@@ -1,0 +1,150 @@
+/* --- GLOBAL PIXEL ART BASKETBALL THEME --- */
+body {
+    font-family: "Press Start 2P", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    /* Pixelated basketball court (wood planks) */
+    background: repeating-linear-gradient(
+        90deg,
+        #c28e52 0px, #c28e52 16px,
+        #b77e40 16px, #b77e40 32px
+    );
+    image-rendering: pixelated;
+    color: #fff;
+}
+
+/* --- SCORE PANELS (Retro Arcade + Basketball Colors) --- */
+.Team-A, .Team-B {
+    background: #242424;
+    padding: 35px 25px;
+
+    border-radius: 6px;
+    border: 4px solid #000;
+
+    /* Thick arcade drop shadow */
+    box-shadow:
+        0 0 0 5px #ff7b00,
+        0 0 0 10px #000,
+        6px 6px #000;
+
+    width: 90%;
+    max-width: 360px;
+    text-align: center;
+}
+
+.Team-A { margin-right: 45px; }
+.Team-B { margin-left: 45px; }
+
+/* --- BIG PIXEL SCORE NUMBERS --- */
+.Score, #numberA, #numberB {
+    font-size: 75px;
+    letter-spacing: 3px;
+
+    /* Neon basketball glow */
+    text-shadow:
+        3px 3px #000,
+        0 0 10px #ff7b00,
+        0 0 20px #ff3c00;
+}
+
+.Score { 
+    position: relative;
+    top: -240px;
+}
+.Score1 { 
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #00d46a;
+    /* Neon basketball glow */
+    text-shadow:
+        
+        3px 3px #000,
+        0 0 10px #ff7b00,
+        0 0 20px #ff3c00;
+}
+
+
+/* --- UNIVERSAL PIXEL BUTTON STYLE --- */
+.btn, .reset-btn {
+    padding: 16px 24px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 4px solid #000;
+
+    font-family: "Press Start 2P", monospace;
+    font-size: 12px;
+    width: 100%;
+    cursor: pointer;
+
+    image-rendering: pixelated;
+    transition: 0.1s ease;
+
+    box-shadow: 4px 4px 0 #000;
+}
+
+/* --- BASKETBALL ARCADE BUTTONS --- */
+.plus {
+    background: #ff7b00; /* basketball orange */
+    box-shadow: 4px 4px 0 #7a3500;
+}
+
+.minus {
+    background: #ff3131; /* foul red */
+    box-shadow: 4px 4px 0 #7a0000;
+}
+
+.save {
+    background: #00d46a; /* clear green */
+    box-shadow: 4px 4px 0 #006628;
+}
+
+.reset {
+    background: #444; /* neutral */
+    box-shadow: 4px 4px 0 #111;
+}
+
+/* --- ARCADE BIG RESET BUTTON --- */
+.reset-btn {
+    top: 100px;
+    background: #ffa800; /* bright basketball rim orange */
+    border-color: #7a4d00;
+    box-shadow: 4px 4px 0 #4a2f00;
+    color: #000;
+}
+
+/* --- HOVER / ACTIVE: Pixel Movement --- */
+.btn:hover, .reset-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 #000;
+}
+
+.btn:active, .reset-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 #000;
+}
+
+/* --- TITLE TEXT --- */
+.title {
+    font-size: 14px;
+    color: #ffd7a0;
+    margin-bottom: 18px;
+    text-shadow: 2px 2px #000;
+}
+
+/* --- RESPONSIVENESS --- */
+@media (min-width: 400px) {
+    .btn {
+        width: auto;
+        margin: 7px;
+    }
+    .btn-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

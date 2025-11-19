@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="Team-A">
+        <div class="title">Team (A)</div>
+
+        <p id="numberA">0</p>
+
+        <div class="btn-wrapper">
+            <button class="btn minus" onclick="teamAScore1()">+1</button>
+            <button class="btn plus" onclick="teamAScore2()">+2</button>
+            <button class="btn save" onclick="teamAScore3()">+3</button>
+        </div>
+        
+        
+    </div>
+    <div>
+        <button onclick="resetAll()" class="reset-btn">Reset</button>
+        
+        <p class="Score">Score</p>
+
+        <p id ="score-text" class="Score1"></p>
+
+
+        
+    </div>
+    
+
+    <div class="Team-B">
+        <div class="title">Team (B)</div>
+
+        <p id="numberB">0</p>
+
+        <div class="btn-wrapper">
+            
+            <button class="btn minus" onclick="teamBScore1()">+1</button>
+            <button class="btn plus" onclick="teamBScore2()">+2</button>
+            <button class="btn save" onclick="teamBScore3()">+3</button>
+        </div>
+        
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
